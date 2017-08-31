@@ -1,0 +1,11 @@
+github "ospreyren/Alamofire" "ios8"
+github "DaveWoodCom/XCGLogger" "Version_4.0.0"
+github "robb/Cartography" "1.0.1"
+github "OspreyRen/SwiftQRCode" "support_carthage"
+github "nixzhu/MonkeyKing" "1.2.2"
+github "matthewpalmer/Locksmith" "3.0.0" 
+github "Hearst-DD/ObjectMapper" "2.2.0" 
+github "ashleymills/Reachability.swift" "v3"
+github "SnapKit/SnapKit" "3.2.0"
+github "bahlo/SwiftGif"
+
