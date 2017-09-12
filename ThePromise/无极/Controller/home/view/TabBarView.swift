@@ -10,28 +10,25 @@ import UIKit
 import Cartography
 
 class TabBarView: UIView, UICollectionViewDataSource, UICollectionViewDelegate {
-    let collectionView: UICollectionView = {
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: 50, height: 30)
         layout.scrollDirection = .horizontal
         
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
-        collectionView.backgroundColor = UIColor.white
-        return collectionView
-    }()
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+        collectionView.backgroundColor = UIColor.red
+        collectionView.register(TabBarItem.self, forCellWithReuseIdentifier: "TabBarItem")
+        
         addSubview(collectionView)
         constrain(collectionView) { (collectionView) in
             collectionView.edges == collectionView.superview!.edges
         }
-        
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        collectionView.register(TabBarItem.classForCoder(), forCellWithReuseIdentifier: "TabBarItem")
-        
+        collectionView.reloadData()
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {

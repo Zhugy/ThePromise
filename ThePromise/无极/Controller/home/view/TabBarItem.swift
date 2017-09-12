@@ -19,8 +19,8 @@ class TabBarItem: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = UIColor.ps_paleGrey
-        addSubview(titleLabel)
+        backgroundColor = UIColor.ps_baseYellow
+        contentView.addSubview(titleLabel)
         setUpContraints()
     }
     

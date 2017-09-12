@@ -9,20 +9,18 @@
 import UIKit
 import Cartography
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
 
-    let tabBarView: TabBarView = TabBarView(frame: CGRect.zero)
+    let pageViewController: UIPageViewController = {
+        let pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
+        return pageViewController
+    }()
+    
+    var viewControllers: [UIViewController] = []
     
     init() {
         super.init(nibName: nil, bundle: nil)
         view.backgroundColor = UIColor.white
-        view.addSubview(tabBarView)
-        constrain(tabBarView) { (tabBarView) in
-            tabBarView.top == tabBarView.superview!.top + 100
-            tabBarView.leading == tabBarView.superview!.leading
-            tabBarView.trailing == tabBarView.superview!.trailing
-            tabBarView.height == 50
-        }
         
     }
     
@@ -33,10 +31,57 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        addChildViewController(pageViewController)
+        view.addSubview(pageViewController.view)
+        pageViewController.view.frame = view.frame
+        
+        viewControllers.append(HomeSubViewController())
+        viewControllers.append(TwoViewController())
+        
+        pageViewController.setViewControllers([viewControllers[0]], direction: .forward, animated: false, completion: nil)
+        pageViewController.delegate = self
+        pageViewController.dataSource = self
+        
+        
         // Do any additional setup after loading the view.
     }
+    
+    func viewControllerAtIndex(index: Int) -> UIViewController? {
+        if viewControllers.count == 0 || index >= viewControllers.count {
+            return nil
+        }
+        return viewControllers[index]
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        guard let index: Int = viewControllers.index(of: viewController)else {
+            return nil
+        }
+        
+        guard index == 0 else {
+            return nil
+        }
+        
+        return viewControllers[index - 1]
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        guard let index: Int = viewControllers.index(of: viewController) else {
+            return nil
+        }
+        
+        guard index > viewControllers.count - 1  else {
+            return nil
+        }
+        
+        return viewControllers[index + 1]
+    }
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        
+    }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
