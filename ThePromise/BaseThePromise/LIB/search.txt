@@ -1,0 +1,89 @@
+{
+    "data": [
+             {
+             "title": "美食",
+             "content": [
+                         {
+                         "title": "早餐"
+                         },
+                         {
+                         "title": "午餐"
+                         },
+                         {
+                         "title": "晚餐"
+                         },
+                         {
+                         "title": "随便"
+                         }
+                         ]
+             },
+             {
+             "title": "游玩",
+             "content": [
+                         {
+                         "title": "去哪儿浪"
+                         },
+                         {
+                         "title": "附近游玩"
+                         },
+                         {
+                         "title": "爬山"
+                         },
+                         {
+                         "title": "徒步"
+                         }
+                         ]
+             },
+             {
+             "title": "功能",
+             "content": [
+                         {
+                         "title": "图文混排"
+                         },
+                         {
+                         "title": "UIColectionView"
+                         },
+                         {
+                         "title": "UITableView"
+                         },
+                         {
+                         "title": "待扩展"
+                         }
+                         ]
+             },
+             {
+             "title": "撒",
+             "content": [
+                         {
+                         "title": "吃"
+                         },
+                         {
+                         "title": "喝"
+                         },
+                         {
+                         "title": "拉"
+                         },
+                         {
+                         "title": "撒"
+                         }
+                         ]
+             },
+             {
+             "title": "吃",
+             "content": [
+                         {
+                         "title": "吃"
+                         },
+                         {
+                         "title": "喝"
+                         },
+                         {
+                         "title": "拉"
+                         },
+                         {
+                         "title": "撒"
+                         }
+                         ]
+             }
+             ]
+}

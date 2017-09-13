@@ -8,4 +8,4 @@ github "Hearst-DD/ObjectMapper" "2.2.0"
 github "ashleymills/Reachability.swift" "v3"
 github "SnapKit/SnapKit" "3.2.0"
 github "bahlo/SwiftGif"
-
+github "ibireme/YYKit"
