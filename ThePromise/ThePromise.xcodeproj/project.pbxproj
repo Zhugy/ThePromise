@@ -52,6 +52,8 @@
 		2BD0B4DA1F68C8FA002A6F96 /* FunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD0B4D91F68C8FA002A6F96 /* FunctionViewController.swift */; };
 		2BD0B4E01F68C9F0002A6F96 /* UITableView+Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD0B4DF1F68C9F0002A6F96 /* UITableView+Help.swift */; };
 		2BD0B4E21F68CB7C002A6F96 /* CoreTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD0B4E11F68CB7C002A6F96 /* CoreTextViewController.swift */; };
+		2BD0B4EF1F69398B002A6F96 /* YYKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BD0B4EE1F69398B002A6F96 /* YYKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2BD0B4F11F6939A9002A6F96 /* YYKit.framework.dSYM in Carthage Copy Frameworks Symbols */ = {isa = PBXBuildFile; fileRef = 2BD0B4F01F6939A9002A6F96 /* YYKit.framework.dSYM */; };
 		2BED01AD1F583CC800BE4673 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BED01A31F583CC800BE4673 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2BED01AE1F583CC800BE4673 /* Cartography.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BED01A41F583CC800BE4673 /* Cartography.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2BED01AF1F583CC800BE4673 /* Locksmith.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BED01A51F583CC800BE4673 /* Locksmith.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -71,6 +73,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				2BD0B4F11F6939A9002A6F96 /* YYKit.framework.dSYM in Carthage Copy Frameworks Symbols */,
 				2B314C931F58382F001FD398 /* Alamofire.framework.dSYM in Carthage Copy Frameworks Symbols */,
 				2B314C941F58382F001FD398 /* Cartography.framework.dSYM in Carthage Copy Frameworks Symbols */,
 				2B314C951F58382F001FD398 /* Locksmith.framework.dSYM in Carthage Copy Frameworks Symbols */,
@@ -91,6 +94,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2BD0B4EF1F69398B002A6F96 /* YYKit.framework in CopyFiles */,
 				2BED01AD1F583CC800BE4673 /* Alamofire.framework in CopyFiles */,
 				2BED01AE1F583CC800BE4673 /* Cartography.framework in CopyFiles */,
 				2BED01AF1F583CC800BE4673 /* Locksmith.framework in CopyFiles */,
@@ -158,6 +162,8 @@
 		2BD0B4D91F68C8FA002A6F96 /* FunctionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionViewController.swift; sourceTree = "<group>"; };
 		2BD0B4DF1F68C9F0002A6F96 /* UITableView+Help.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Help.swift"; sourceTree = "<group>"; };
 		2BD0B4E11F68CB7C002A6F96 /* CoreTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreTextViewController.swift; sourceTree = "<group>"; };
+		2BD0B4EE1F69398B002A6F96 /* YYKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYKit.framework; path = Carthage/Build/iOS/YYKit.framework; sourceTree = "<group>"; };
+		2BD0B4F01F6939A9002A6F96 /* YYKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = YYKit.framework.dSYM; path = Carthage/Build/iOS/YYKit.framework.dSYM; sourceTree = "<group>"; };
 		2BED01A31F583CC800BE4673 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		2BED01A41F583CC800BE4673 /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = Carthage/Build/iOS/Cartography.framework; sourceTree = "<group>"; };
 		2BED01A51F583CC800BE4673 /* Locksmith.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Locksmith.framework; path = Carthage/Build/iOS/Locksmith.framework; sourceTree = "<group>"; };
@@ -251,6 +257,7 @@
 		2B314C9D1F583852001FD398 /* frameworks.dSYM */ = {
 			isa = PBXGroup;
 			children = (
+				2BD0B4F01F6939A9002A6F96 /* YYKit.framework.dSYM */,
 				2B314C891F58382F001FD398 /* Alamofire.framework.dSYM */,
 				2B314C8A1F58382F001FD398 /* Cartography.framework.dSYM */,
 				2B314C8B1F58382F001FD398 /* Locksmith.framework.dSYM */,
@@ -486,6 +493,7 @@
 		2BED01B71F583CE500BE4673 /* frameworks.framework */ = {
 			isa = PBXGroup;
 			children = (
+				2BD0B4EE1F69398B002A6F96 /* YYKit.framework */,
 				2BED01A31F583CC800BE4673 /* Alamofire.framework */,
 				2BED01A41F583CC800BE4673 /* Cartography.framework */,
 				2BED01A51F583CC800BE4673 /* Locksmith.framework */,
@@ -591,6 +599,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework.dSYMe",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftGif.framework.dSYM",
 				"$(SRCROOT)/Carthage/Build/iOS/XCGLogger.framework.dSYMyfile",
+				"$(SRCROOT)/Carthage/Build/iOS/YYKit.framework.dSYM",
 			);
 			outputPaths = (
 			);
