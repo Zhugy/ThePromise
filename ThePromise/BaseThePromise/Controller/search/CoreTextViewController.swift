@@ -15,6 +15,7 @@ class CoreTextViewController: UIViewController {
 
         
         
+        view.backgroundColor = UIColor.white
         // Do any additional setup after loading the view.
     }
 
