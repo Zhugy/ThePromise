@@ -45,6 +45,7 @@ class RootViewController: UITabBarController {
         titles.append("我的")
         
         
+        
         for i in 0 ..< viewControllers.count {
             let item: UITabBarItem = UITabBarItem(title: titles[i], image: imageNames[i].withRenderingMode(.alwaysOriginal), selectedImage: selectedImageNames[i].withRenderingMode(.alwaysOriginal))
             item.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.ps_warmGrey], for: .normal)
